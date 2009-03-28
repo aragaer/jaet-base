@@ -7,6 +7,12 @@ function setupNetwork() {
     openPreferences('proxy');
 }
 
+function openExtManager() {
+    println("Extension manager activated.");
+    openDialog("chrome://mozapps/content/extensions/extensions.xul?type=extensions",
+            "", "chrome,menubar,extra-chrome,toolbar,dialog=no,resizable");
+}
+
 function openPreferences(paneID) {
     var instantApply = getBoolPref("browser.preferences.instantApply", false);
     var features = "chrome,titlebar,toolbar,centerscreen"

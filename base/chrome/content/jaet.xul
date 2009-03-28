@@ -2,7 +2,10 @@
 <?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
 <?xml-stylesheet href="jaet.css" type="text/css"?>
 
-<!DOCTYPE window SYSTEM "chrome://jaet/locale/jaet.dtd">
+<!DOCTYPE window [
+<!ENTITY % jaet SYSTEM "chrome://jaet/locale/jaet.dtd">
+%jaet;
+]>
 
 <window id="main" title="&title;" width="800" height="600"
 	xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
@@ -17,6 +20,7 @@
 
     <command id="File:Exit" oncommand="quit()"/>
     <command id="Settings:Network" oncommand="setupNetwork()"/>
+    <command id="Settings:Extensions" oncommand="openExtManager()"/>
     
     <toolbar id="main-toolbar">
         <toolbaritem>
@@ -34,6 +38,9 @@
                         <menuitem label="&menu_settings.network.label;"
                                   accesskey="&menu_settings.network.accesskey;"
                                   command="Settings:Network"/>
+                        <menuitem label="&menu_settings.extensions.label;"
+                                  accesskey="&menu_settings.extensions.accesskey;"
+                                  command="Settings:Extensions"/>
                     </menupopup>
                 </menu>
             </menubar>

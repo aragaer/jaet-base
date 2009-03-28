@@ -13,6 +13,9 @@
 <!ENTITY menu.settings.accesskey "S">
 <!ENTITY menu_settings.network.label "Network settings">
 <!ENTITY menu_settings.network.accesskey "N">
+<!ENTITY menu_settings.extensions.label "Extension manager">
+<!ENTITY menu_settings.extensions.accesskey "E">
+
 <!ENTITY menu_settings.preferences.label "Preferences">
 <!ENTITY menu_settings.preferences.accesskey "P">
 
