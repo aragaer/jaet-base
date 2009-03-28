@@ -1,5 +1,7 @@
 SHELL = /bin/sh
 
+SUBMODULES = base
+
 DIRS = base extensions
 TARGET ?= Linux
 BASE_DIR = $(shell pwd)
@@ -10,6 +12,14 @@ export TARGET
 
 all:
 	$(MAKE) jaet
+
+push:
+	for i in $(SUBMODULES) ; do (cd $$i && git push origin master ) ; done
+	git push origin master
+
+pull:
+	git pull origin master
+	git submodule update
 
 clean:
 	@$(MAKE) $(DIRS) COMMAND=$@
