@@ -1,6 +1,0 @@
-SHELL = /bin/sh
-EXTENSIONS_DIR=$(BASE_DIR)/extensions
-BUILD_DIR=$(BASE_DIR)/build
-
-SDK_DIR = /home/aragaer/xulrunner-sdk
-export SDK_DIR
