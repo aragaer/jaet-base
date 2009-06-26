@@ -5,11 +5,17 @@ AM_INIT_AUTOMAKE([-Wall -Werror foreign])
 AC_CONFIG_FILES([Makefile
                  src/Makefile
                  src/components/Makefile
+                 src/components/eve-api/Makefile
                  src/program/Makefile])
+AC_SUBST_FILE([xpt_mk])
+xpt_mk=xpt.mk
+
 AC_ARG_WITH(gecko_sdk, AC_HELP_STRING([--with-gecko-sdk=DIR], [Path to Gecko SDK]))
 AC_ARG_WITH(gecko_full_headers, AC_HELP_STRING([--with-gecko-headers=DIR], [Path to Gecko headers]))
 AC_ARG_WITH(gecko_full_idl, AC_HELP_STRING([--with-gecko-idl=DIR], [Path to Gecko IDL files]))
 AC_ARG_WITH(xpidl, AC_HELP_STRING([--with-xpidl=SOURCE_DIR], [Path to XPIDL binary]))
+AC_ARG_VAR(XPIDL, [Path to XPIDL binary])
+AC_ARG_VAR(IDLDIR, [Path to Gecko IDL files])
 
 AC_PATH_PROG(PKG_CONFIG, pkg-config)
 
@@ -47,11 +53,7 @@ if test x"$PKG_CONFIG" != x ; then
     fi
     if test x"$XPIDL" = x ; then
         sdkdir=`$PKG_CONFIG --variable=sdkdir $xulrunner_package`
-        for i in "$sdkdir/bin/xpidl" "$sdkdir/xpidl" ; do
-            if test -x $i ; then
-                XPIDL=$i
-            fi
-        done         
+        AC_PATH_PROGS(XPIDL, ["bin/xpidl" "xpidl"], "", "$sdkdir")
         if test x"XPIDL" = x ; then 
             AC_MSG_ERROR([Can't find xpidl based on libxulrunner .pc file])
         fi
@@ -82,8 +84,7 @@ else
     AC_MSG_ERROR([Must either specify --with-gecko-sdk=DIR or --with-xpidl=DIR])
 fi
 
-AC_SUBST(IDLDIR)
 AC_SUBST(GECKO_INCLUDEDIR)
-AC_SUBST(XPIDL)
+AC_SUBST(compdir, "$bindir/components")
 
 AC_OUTPUT
