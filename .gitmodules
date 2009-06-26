@@ -4,3 +4,6 @@
 [submodule "src/components/eve-market"]
 	path = src/components/eve-market
 	url = git://github.com/aragaer/nsievemarketexportsservice.git
+[submodule "src/program/jaet"]
+	path = src/program/jaet
+	url = git://github.com/aragaer/jaet.git

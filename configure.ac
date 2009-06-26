@@ -1,8 +1,11 @@
+AC_PREREQ([2.63])
 AC_INIT([Just Another Eve Tool], [0.1], [aragaer@gmail.com])
 AC_CONFIG_AUX_DIR([config])
 AM_INIT_AUTOMAKE([-Wall -Werror foreign])
 AC_CONFIG_FILES([Makefile
-                 src/Makefile])
+                 src/Makefile
+                 src/components/Makefile
+                 src/program/Makefile])
 AC_ARG_WITH(gecko_sdk, AC_HELP_STRING([--with-gecko-sdk=DIR], [Path to Gecko SDK]))
 AC_ARG_WITH(gecko_full_headers, AC_HELP_STRING([--with-gecko-headers=DIR], [Path to Gecko headers]))
 AC_ARG_WITH(gecko_full_idl, AC_HELP_STRING([--with-gecko-idl=DIR], [Path to Gecko IDL files]))
