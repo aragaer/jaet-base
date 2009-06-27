@@ -2,6 +2,7 @@ AC_PREREQ([2.63])
 AC_INIT([Just Another Eve Tool], [0.1], [aragaer@gmail.com])
 AC_CONFIG_AUX_DIR([config])
 AM_INIT_AUTOMAKE([-Wall -Werror foreign])
+AC_CONFIG_SRCDIR([src/srcstamp])
 AC_CONFIG_FILES([Makefile
                  src/Makefile
                  src/components/Makefile
