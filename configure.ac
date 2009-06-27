@@ -8,8 +8,6 @@ AC_CONFIG_FILES([Makefile
                  src/components/Makefile
                  src/components/eve-api/Makefile
                  src/program/Makefile])
-AC_SUBST_FILE([xpt_mk])
-xpt_mk=xpt.mk
 
 AC_ARG_WITH(gecko_sdk, AC_HELP_STRING([--with-gecko-sdk=DIR], [Path to Gecko SDK]))
 AC_ARG_WITH(gecko_full_headers, AC_HELP_STRING([--with-gecko-headers=DIR], [Path to Gecko headers]))
@@ -86,6 +84,5 @@ else
 fi
 
 AC_SUBST(GECKO_INCLUDEDIR)
-AC_SUBST(compdir, "$bindir/components")
 
 AC_OUTPUT
