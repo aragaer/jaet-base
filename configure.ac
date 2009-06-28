@@ -7,6 +7,7 @@ AC_CONFIG_FILES([Makefile
                  src/Makefile
                  src/components/Makefile
                  src/components/eve-api/Makefile
+                 src/components/eve-market/Makefile
                  src/program/Makefile])
 
 AC_ARG_WITH(gecko_sdk, AC_HELP_STRING([--with-gecko-sdk=DIR], [Path to Gecko SDK]))
