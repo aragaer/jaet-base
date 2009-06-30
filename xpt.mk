@@ -1,3 +1,6 @@
 compdir=$(pkgdatadir)/components
+chromedir=$(pkgdatadir)/chrome
+contentdir=$(chromedir)/content
+prefdir=$(pkgdatadir)/defaults/preferences
 %.xpt: %.idl
 	$(XPIDL) -m typelib -w -v -I $(IDLDIR) -e $@ $<
