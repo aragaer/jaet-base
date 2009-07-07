@@ -8,14 +8,20 @@ AC_CONFIG_FILES([Makefile
                  src/components/Makefile
                  src/components/eve-api/Makefile
                  src/components/eve-market/Makefile
+                 src/program/Makefile
                  src/program/jaet/Makefile
                  src/program/jaet/application.ini
-                 src/program/jaet/components/Makefile
                  src/program/jaet/chrome/Makefile
+                 src/program/jaet/chrome/content/Makefile
+                 src/program/jaet/chrome/content/dialogs/Makefile
+                 src/program/jaet/chrome/content/tools/Makefile
+                 src/program/jaet/chrome/locale/Makefile
+                 src/program/jaet/chrome/locale/branding/Makefile
+                 src/program/jaet/chrome/locale/en_US/Makefile
+                 src/program/jaet/components/Makefile
                  src/program/jaet/data/Makefile
                  src/program/jaet/defaults/Makefile
-                 src/program/jaet/defaults/preferences/Makefile
-                 src/program/Makefile])
+                 src/program/jaet/defaults/preferences/Makefile])
 
 AC_ARG_WITH(gecko_sdk, AC_HELP_STRING([--with-gecko-sdk=DIR], [Path to Gecko SDK]))
 AC_ARG_WITH(gecko_full_headers, AC_HELP_STRING([--with-gecko-headers=DIR], [Path to Gecko headers]))
