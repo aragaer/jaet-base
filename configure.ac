@@ -18,6 +18,7 @@ AC_CONFIG_FILES([Makefile
                  src/program/jaet/chrome/locale/Makefile
                  src/program/jaet/chrome/locale/branding/Makefile
                  src/program/jaet/chrome/locale/en_US/Makefile
+                 src/program/jaet/chrome/modules/Makefile
                  src/program/jaet/components/Makefile
                  src/program/jaet/data/Makefile
                  src/program/jaet/defaults/Makefile
