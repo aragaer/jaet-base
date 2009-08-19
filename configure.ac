@@ -4,6 +4,8 @@ AC_CONFIG_AUX_DIR([config])
 AM_INIT_AUTOMAKE([-Wall -Werror foreign])
 AC_CONFIG_SRCDIR([src/srcstamp])
 AC_CONFIG_FILES([Makefile
+                 binary/Makefile
+                 binary/images/Makefile
                  src/Makefile
                  src/components/Makefile
                  src/components/eve-api/Makefile

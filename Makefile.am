@@ -1,4 +1,4 @@
-SUBDIRS=src
+SUBDIRS=src binary
 bin_SCRIPTS=jaet
 
 jaet:

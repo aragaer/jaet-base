@@ -7,3 +7,6 @@
 [submodule "src/program/jaet"]
 	path = src/program/jaet
 	url = git://github.com/aragaer/jaet.git
+[submodule "binary/images"]
+	path = binary/images
+	url = git@github.com:aragaer/jaet-images.git
