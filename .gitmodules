@@ -9,4 +9,4 @@
 	url = git://github.com/aragaer/jaet.git
 [submodule "binary/images"]
 	path = binary/images
-	url = git@github.com:aragaer/jaet-images.git
+	url = git://github.com/aragaer/jaet-images.git
