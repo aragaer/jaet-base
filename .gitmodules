@@ -1,6 +1,6 @@
 [submodule "src/components/eve-api"]
 	path = src/components/eve-api
-	url = git://github.com/aragaer/nsieveapiservice.git
+	url = git://github.com/aragaer/EveAPI.git
 [submodule "src/components/eve-market"]
 	path = src/components/eve-market
 	url = git://github.com/aragaer/nsievemarketexportsservice.git
