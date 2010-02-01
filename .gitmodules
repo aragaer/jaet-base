@@ -1,12 +1,12 @@
 [submodule "src/components/eve-api"]
 	path = src/components/eve-api
-	url = git://github.com/aragaer/nsieveapiservice.git
+	url = http://github.com/aragaer/EveAPI.git
 [submodule "src/components/eve-market"]
 	path = src/components/eve-market
-	url = git://github.com/aragaer/nsievemarketexportsservice.git
+	url = http://github.com/aragaer/nsievemarketexportsservice.git
 [submodule "src/program/jaet"]
 	path = src/program/jaet
-	url = git://github.com/aragaer/jaet.git
+	url = http://github.com/aragaer/jaet.git
 [submodule "binary/images"]
 	path = binary/images
-	url = git@github.com:aragaer/jaet-images.git
+	url = http://github.com/aragaer/jaet-images.git
