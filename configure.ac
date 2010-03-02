@@ -9,6 +9,7 @@ AC_CONFIG_FILES([Makefile
                  src/Makefile
                  src/components/Makefile
                  src/components/eve-api/Makefile
+                 src/components/eve-central/Makefile
                  src/components/eve-market/Makefile
                  src/program/Makefile
                  src/program/jaet/Makefile

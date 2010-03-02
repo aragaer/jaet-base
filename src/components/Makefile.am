@@ -1,1 +1,1 @@
-SUBDIRS=eve-api eve-market
+SUBDIRS=eve-api eve-market eve-central
