@@ -74,7 +74,7 @@ if test x"$PKG_CONFIG" != x ; then
         sdkdir=`$PKG_CONFIG --variable=sdkdir $xulrunner_package`
         AC_PATH_PROGS(XPIDL, ["bin/xpidl" "xpidl"], "", "$sdkdir")
         if test x"XPIDL" = x ; then 
-            AC_MSG_ERROR([Can't find xpidl based on libxulrunner .pc file])
+            AC_MSG_ERROR([Cannot find xpidl based on libxulrunner .pc file])
         fi
     fi
 fi
