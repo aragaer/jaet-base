@@ -18,7 +18,7 @@ AC_CONFIG_FILES([Makefile
                  src/program/jaet/chrome/content/Makefile
                  src/program/jaet/chrome/content/dialogs/Makefile
                  src/program/jaet/chrome/content/img/Makefile
-                 src/program/jaet/chrome/content/tools/Makefile
+                 src/program/jaet/chrome/content/panels/Makefile
                  src/program/jaet/chrome/locale/Makefile
                  src/program/jaet/chrome/locale/branding/Makefile
                  src/program/jaet/chrome/locale/en_US/Makefile
