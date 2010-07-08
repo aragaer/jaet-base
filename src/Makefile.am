@@ -1,1 +1,1 @@
-SUBDIRS=components program
+SUBDIRS=components extensions program

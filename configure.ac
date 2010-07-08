@@ -11,6 +11,7 @@ AC_CONFIG_FILES([Makefile
                  src/components/eve-api/Makefile
                  src/components/eve-central/Makefile
                  src/components/eve-market/Makefile
+                 src/extensions/Makefile
                  src/program/Makefile
                  src/program/jaet/Makefile
                  src/program/jaet/application.ini
