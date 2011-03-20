@@ -105,7 +105,7 @@ else
 fi
 
 AC_SUBST(GECKO_INCLUDEDIR)
-BUILDID=`date +%Y%m%d`
+BUILDID=`date +%Y%m%d%S`
 AC_SUBST(BUILDID)
 
 AC_OUTPUT
