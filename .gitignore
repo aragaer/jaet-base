@@ -1,4 +1,3 @@
-*.in
 Makefile
 config.*
 config/*
