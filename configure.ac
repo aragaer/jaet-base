@@ -57,7 +57,7 @@ if test "x$with_xpidl" != x -a "x$with_xpidl" != xyes -a "x$with_xpidl" != xno ;
     XPIDL="$with_xpidl"
 fi
 
-xulrunner_package=libxul-unstable
+xulrunner_package=libxul
 if test x"$PKG_CONFIG" != x ; then
     if test x"$IDLDIR" = x ; then
         IDLDIR=`$PKG_CONFIG --variable=idldir $xulrunner_package`
